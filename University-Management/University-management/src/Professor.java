@@ -1,13 +1,14 @@
-public abstract class Professor extends Employee {
+public class Professor extends Employee {
     int publications;
 
-    public Professor(String name, double salary, String position, int publications) {
-        super(name, salary, position);
+    public Professor(String name, double salary, int publications) {
+        super(name, salary);
         this.publications = publications;
     }
 
-    double calculateSalary(double salary, int publications) {
-        salary += (double)(publications * 80);
-        return salary;
+    @Override
+    public double calculateSalary() {
+        return getSalary() + (publications * 80);
     }
+
 }

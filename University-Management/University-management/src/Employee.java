@@ -1,15 +1,20 @@
 public abstract class Employee {
     private String name;
     private double salary;
-    private String position;
 
-    public Employee(String name, double salary, String position) {
+    public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
-        this.position = position;
     }
 
-    public abstract double calculateSalary(double var1);
+    public double getSalary() {
+        return salary;
+    }
 
-    public abstract String displayInfo();
+    public abstract double calculateSalary();
+
+    public void displayInfo(){
+        System.out.println("\n---------- Info ----------");
+        System.out.println("Name: " + name);
+    }
 }

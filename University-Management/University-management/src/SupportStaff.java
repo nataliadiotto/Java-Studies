@@ -1,13 +1,14 @@
-public abstract class SupportStaff extends Employee {
+public class SupportStaff extends Employee {
     double hoursWorked;
 
-    public SupportStaff(String name, double salary, String position, double hoursWorked) {
-        super(name, salary, position);
+    public SupportStaff(String name, double salary, double hoursWorked) {
+        super(name, salary);
         this.hoursWorked = hoursWorked;
     }
 
-    public double calculateSalary(double salary) {
-        salary *= this.hoursWorked;
-        return salary;
+    @Override
+    public double calculateSalary() {
+        return getSalary() + (20 * hoursWorked);
     }
+
 }

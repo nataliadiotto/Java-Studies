@@ -1,13 +1,14 @@
- public abstract class AdministrativeStaff extends Employee {
+ public class AdministrativeStaff extends Employee {
         double yearsExperience;
 
-        public AdministrativeStaff(String name, double salary, String position, double yearsExperience) {
-            super(name, salary, position);
+        public AdministrativeStaff(String name, double salary, double yearsExperience) {
+            super(name, salary);
             this.yearsExperience = yearsExperience;
         }
 
-        public double calculateSalary(double salary) {
-            salary += this.yearsExperience * 45.0;
-            return salary;
-        }
+     @Override
+     public double calculateSalary() {
+         return getSalary() + (yearsExperience * 45.0);
+     }
+
     }
