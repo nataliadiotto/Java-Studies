@@ -5,7 +5,7 @@ Welcome to my personal Java projects repository! This repository contains a coll
 ## Project List 📝📂
 
 1. **University Management**
-   - Description: A simplified console-based application for a university that manages different types of employees: professors, administrative staff, and support staff. This challenge allowed me to practice creating an inheritance hierarchy, implementing abstract methods, utilizing polymorphism, and encapsulating data within classes. It simulates a scenario where a software developer would design and implement an object-oriented solution for managing employees in a university setting. 
+   - Description: A simplified console-based application for a university that manages different types of employees: professors, administrative staff, and support staff. This challenge allowed me to practice creating an inheritance hierarchy, implementing abstract methods, utilizing polymorphism, and encapsulating data within classes. It simulated a scenario where a software developer would design and implement an object-oriented solution for managing employees in a university setting. 
    - Features:
      - User input and output;
      - Mathematical calculations;
@@ -20,5 +20,5 @@ Contributions to this repository are not expected as it is primarily for persona
 
 If you have any questions, suggestions, or would like to connect, you can reach me at diottonatalia@gmail.com 
 
-**Happy coding! ☕️💻
+**Happy coding!** ☕️💻
  
