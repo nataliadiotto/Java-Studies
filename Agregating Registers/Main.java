@@ -1,8 +1,5 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +21,7 @@ public class Main {
 
         int[] quantities = {12, 30, 4, 98, 4, 8, 31, 74, 12, 1, 3, 35};
 
-        Map<LocalDate, Integer> dateCountMap = new HashMap<>();
+        Map<LocalDate, Integer> dateCountMap = new LinkedHashMap<>();
 
         for (int i = 0; i < dates.length; i++) {
             LocalDate date = dates[i];
@@ -33,10 +30,9 @@ public class Main {
         }
 
         Arrays.stream(dates)
-                .forEach(date -> dateCountMap.put(date, dateCountMap.getOrDefault(date,0) + 1));
+                .forEach(date -> dateCountMap.put(date, dateCountMap.getOrDefault(date,0)));
 
         dateCountMap.forEach((date, count) -> System.out.println(date + ": " + count));
-
 
     }
 }
