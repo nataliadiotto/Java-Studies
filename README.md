@@ -13,7 +13,15 @@ Whether it's experimenting with object-oriented programming, data structures and
      - Mathematical calculations;
      - Conditional statements and loops;
      - OOP design.
-
+    
+2. **Agregating Registers**
+   - Description: I was given an array of dates and an array of corresponding quantities. My task was to count the quantities for each date and display the results. It provided an opportunity to enhance my understanding of data manipulation and aggregation using collection classes.
+   - Features:
+     - Map;
+     - Dates;
+     - Arrays;
+     - OOP design.
+    
 ## Contributing ✏️💡
 
 Contributions to this repository are not expected as it is primarily for personal learning purposes. However, if you have suggestions, improvements, or bug fixes, feel free to submit a pull request to help me enhance my Java programming skills. Please ensure that your contributions align with the purpose and scope of this repository.
