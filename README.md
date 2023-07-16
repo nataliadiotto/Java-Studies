@@ -22,6 +22,13 @@ Whether it's experimenting with object-oriented programming, data structures and
      - Arrays;
      - OOP design.
     
+2. **Number Operations With Streams**
+   - Description: I practiced using streams, lambda expressions, and map operations to perform various operations on a list of numbers. My goal was to manipulate the numbers using streams and generate specific results based on the given requirements. It has strengthened my understanding of functional programming concepts in Java.
+   - Features:
+     - Map operations to manipulate data;
+     - Lambda expressions;
+     - Streams;
+    
 ## Contributing ✏️💡
 
 Contributions to this repository are not expected as it is primarily for personal learning purposes. However, if you have suggestions, improvements, or bug fixes, feel free to submit a pull request to help me enhance my Java programming skills. Please ensure that your contributions align with the purpose and scope of this repository.
