@@ -27,7 +27,7 @@ Whether it's experimenting with object-oriented programming, data structures and
    - Features:
      - Map operations to manipulate data;
      - Lambda expressions;
-     - Streams;
+     - Streams.
     
 ## Contributing ✏️💡
 
