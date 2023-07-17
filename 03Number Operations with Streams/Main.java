@@ -1,43 +1,62 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.UnaryOperator;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 
 public class Main {
-    /*
 
-   1. Create a list of numbers.
-   2. Use a stream to perform the following operations:
-
-      a) Filter the numbers to keep only the even numbers.
-      b) Square each number in the stream.
-      c) Sum all the squared numbers.
-      d) Calculate the average of the squared numbers.
-      e) Find the maximum value among the squared numbers.
-      f) Convert each squared number to a binary string.
-      g) Count the occurrences of each digit (0-9) in the binary strings.
-
-    */
     public static void main(String[] args) {
-        Consumer<Integer> print = System.out::print;
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        List<Integer> numbers = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        // Filter even numbers
+        List<Integer> evenNumbers = numbers.stream()
+                .filter(number -> number % 2 == 0)
+                .collect(Collectors.toList());
 
-        System.out.println("Original numbers:");
-        System.out.println(numbers);
-        System.out.println();
+        // Square each number
+        List<Integer> squaredNumbers = evenNumbers.stream()
+                .map(number -> number * number)
+                .collect(Collectors.toList());
 
-        System.out.println("Even numbers:");
-        numbers.removeIf(number -> number % 2 != 0);
-        System.out.println(numbers);
-        System.out.println();
+        // Sum of squared numbers
+        int sum = squaredNumbers.stream()
+                .reduce(0, Integer::sum);
 
-        System.out.println("Squared even numbers:");
-        UnaryOperator<Integer> square = number -> number * number;
-        numbers.stream().map(square).forEach(System.out::println);
+        // Calculate the average of squared numbers
+        double average = squaredNumbers.stream()
+                .mapToDouble(Integer::doubleValue)
+                .average()
+                .orElse(0.0);
 
-        Consumer<Integer> sum = number -> numbers.forEach(int sum = sum + number);
+        // Find the maximum value among squared numbers
+        int max = squaredNumbers.stream()
+                .max(Integer::compareTo)
+                .orElse(0);
 
+        // Convert squared numbers to binary strings
+        List<String> binaryStrings = squaredNumbers.stream()
+                .map(Integer::toBinaryString)
+                .collect(Collectors.toList());
+
+        // Count occurrences of each digit (0-9) in binary strings
+        Map<Character, Long> digitCountMap = binaryStrings.stream()
+                .flatMapToInt(CharSequence::chars)
+                .filter(Character::isDigit)
+                .mapToObj(ch -> (char) ch)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        System.out.println("Even numbers: " + evenNumbers);
+        System.out.println("Squared numbers: " + squaredNumbers);
+        System.out.println("Sum of squared numbers: " + sum);
+        System.out.println("Average of squared numbers: " + average);
+        System.out.println("Maximum value among squared numbers: " + max);
+        System.out.println("Binary strings: " + binaryStrings);
+        System.out.println("Digit count map: " + digitCountMap);
     }
 }
+
+
+
+
