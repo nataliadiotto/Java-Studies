@@ -1,4 +1,4 @@
-# Java Practice Playground 👩‍💻☕️🎢
+# Java Practice Playground 👩‍💻♨️🎢
 
 Welcome to my Java Practice Playground! This repository is dedicated to honing my Java programming skills and exploring various concepts, techniques, and projects related to Java development. Here, you'll find a collection of Java programs, exercises, and mini-projects that I've worked on to improve my understanding of Java and its ecosystem.
 
@@ -14,7 +14,7 @@ Whether it's experimenting with object-oriented programming, data structures and
      - Conditional statements and loops;
      - OOP design.
     
-2. **Agregating Registers**
+2. **Aggregating Registers**
    - Description: I was given an array of dates and an array of corresponding quantities. My task was to count the quantities for each date and display the results. It provided an opportunity to enhance my understanding of data manipulation and aggregation using collection classes.
    - Features:
      - Map;
@@ -37,5 +37,5 @@ Contributions to this repository are not expected as it is primarily for persona
 
 If you have any questions, suggestions, or would like to connect, you can reach me at diottonatalia@gmail.com 
 
-**Happy coding!** ☕️💻🚀🔥
+**Happy coding!** 💻🚀🔥
  
