@@ -35,7 +35,7 @@ Contributions to this repository are not expected as it is primarily for persona
 
 ## Contact 👩‍💻📧
 
-If you have any questions, suggestions, or would like to connect, you can reach me at diottonatalia@gmail.com 
+If you have any questions, suggestions, or would like to connect, you can reach me at diottonatalia@gmail.com
 
 **Happy coding!** ♨️💻🚀🔥
  
